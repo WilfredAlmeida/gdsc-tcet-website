@@ -4,7 +4,7 @@ Made using ReactJS and Material UI
 
 
 
-## Deployment
+## Executing
 
 To run this project you need `nodejs`, `npm`(optional) and `yarn`
 
@@ -12,11 +12,25 @@ To run this project you need `nodejs`, `npm`(optional) and `yarn`
 - Run `yarn install`
 - Run `yarn run start`
 
+In the `package.json` file the script  
+`"build": "INLINE_RUNTIME_CHUNK=false react-scripts build"`  
+has the `INLINE_RUNTIME_CHUNK=false` that's necessary for auto server deployment. To generate a local build, remove the `INLINE_RUNTIME_CHUNK=false` part and then generate the build.
 
 ## Branches
 - `master`: The main branch of the repo, this branch must be used for auto deplpyment. Never push any code to this branch. Always make PR from the stage branch. Merges should be done only by technical core members or any other authorized members.
 - `stage`: This is the branch where all changes should be pushed. This branch can be auto deployed to test the changes made before pushing them to production
 - `dev`: Any other changes that must be in VCS.
+
+## Deployment
+
+The master branch is setup for auto deploy, any changes commited to it will be auto pushed to server and will reflect in live.
+
+The deployment time is `~120 secs` 
+
+There is a GitHub Action setup that creates a build from the code and transfers the build files to server using FTP.
+
+The GitHub Actions code file is on the `master` branch in the `.github/workflows/actions.yml` file.
+
 ## Contributing
 
 Contributions are always welcome!
