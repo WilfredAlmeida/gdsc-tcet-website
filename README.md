@@ -30,4 +30,4 @@ If we're looking for any contribution, we'll open issues accordingly, please kee
 
 ## Thanks To
 
-Thanks to [Harshit Daga](`https://github.com/harshitdaga7`) and [Ranveer Shah](`https://github.com/Radon333`) for the old website. The old repo is now archived and can be accessed [here](``)
+Thanks to [Harshit Daga](https://github.com/harshitdaga7) and [Ranveer Shah](https://github.com/Radon333) for the old website. The old repo is now archived and can be accessed [here](``)
